@@ -5,6 +5,11 @@ android {
     buildToolsVersion '28.0.3'
     useLibrary 'org.apache.http.legacy'
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.chanapps.four.activity"
         minSdkVersion 15
@@ -17,6 +22,7 @@ android {
             proguardFiles 'proguard.cfg'
         }
         release {
+            signingConfig signingConfigs.debug
             minifyEnabled true
             proguardFiles 'proguard.cfg'
         }
