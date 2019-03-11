@@ -12,7 +12,6 @@ buildscript {
         google()
     }
     dependencies {
-        classpath files('/usr/local/google/home/mkroghj/source/r8/build/libs/r8.jar')
         classpath 'com.android.tools.build:gradle:3.2.0'
     }
 }
